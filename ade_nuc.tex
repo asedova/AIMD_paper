@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+%\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[font={footnotesize}, labelfont = {bf}]{caption}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage[noblocks]{authblk}
+
+%\usepackage{achemso}
+%\setkeys{acs}{usetitle = true}
+%\usepackage{titlesec}
+%\usepackage{sidecap}
+%\titleformat{\section}
+%  {\normalfont\fontsize{14}{19}\bfseries}{\thesection}{1em}{}
+%\titleformat{\subsection}
+%  {\normalfont\fontsize{12}{19}\bfseries}{\thesection}{1em}{}
+% \titleformat{\subsubsection}
+%   {\normalfont\fontsize{11}{19}\bfseries}{\thesection}{1em}{}
+\setlength{\topmargin}{-0.8in}
+\setlength{\headheight}{0.0in}
+\setlength{\oddsidemargin}{-0.2in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{7.0in}
+\setlength{\textheight}{9in}
+\DeclareGraphicsExtensions{.png}
+\usepackage[square,comma,numbers,sort&compress]{natbib}
+%\usepackage{titling}
+%\pretitle{\begin{flushleft}\Large}
+%\posttitle{\par\end{flushleft}\vspace{-5em}}
+
+  \begin{document}
+ \title{\Large \textbf{{ Ab initio molecular dynamics of adenine ribonucleoside under full solvation: effects of polarization and water motions on molecular conformations}}}
+\author[1]{Ada Sedova}
+\author[2]{Micholas Dean Smith}
+\author[1]{Dmytro Bykov}
+\affil[1]{National Center for Computational Sciences, Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA \footnote{Notice: ``This manuscript has been authored by UT-Battelle, LLC under
+Contract No. DE-AC05-00OR22725 with the U.S. Department of Energy. The
+United States Government retains and the publisher, by accepting the
+article for publication, acknowledges that the United States Government
+retains a non-exclusive, paid-up, irrevocable, world-wide license to
+publish or reproduce the published form of this manuscript, or allow
+others to do so, for United States Government purposes. The Department
+of Energy will provide public access to these results of federally
+sponsored research in accordance with the DOE Public Access Plan
+(http://energy.gov/downloads/doe-public-access-plan).''}}
+\affil[2]{CMB, UTK/ORNL}
+\date{\today}
+\maketitle
+%\setcounter{equation}{0}
+%\pagenumbering{gobble}
+\begin{abstract}
+Nucleic acids have been difficult to simulate accurately with models such as classical molecular dynamics which use fixed point-charges and rigid water molecules, despite extensive efforts. In particular, the chi torsion angle has been the focus of numerous re-parameterizations. Here we present ab initio molecular dynamics simulations of a nucleic acid building block, adenine ribonucleoside, solvated with 200 explicit water molecules, and compared to classical molecular dynamics of the same system. We show that the chi torsion-angle dynamics, even for this uncharged system, are strongly driven by charge fluctuations and dynamical fluctuations in the solvation-water network, which are determined by flexibility and polarization of the water molecules. Due to the complex cooperative effects of this network on stabilizing hydrogen bonding interactions of the nucleoside, we hypothesize that an accurate description of the chi torsion dynamics may not be possible simply by adjusting the rotational force constant.
+
+\end{abstract}
+Main paper. Proposed points: water bond angles, bond lengths, charges; Dwell times of waters in the first solvation shell especially the "gossamer" around that key OH group. Dwell times of chi torsion angle when starting from the two structures (162 and -135 degrees), and compared to MD. Fluctuations of charges. Profiles for remaining molecular motions i.e. ribose torsion angles, OH bending, stretching, compared to MD.
+
+\section{Acknowledgments} 
+This research used resources of the Oak Ridge Leadership Computing Facility, which is a DOE Office of Science User Facility supported under Contract DE-AC05-00OR227525.
+\section{Supplementary Information}
+Supplementary Information.
+
+
+
+
+%Figure~\ref{fig:comput_pcr} illustrates 
+
+%\clearpage
+%\newpage
+%
+%\begin{figure}[htbp]
+%%\begin{wrapfigure}{L}{0.6\textwidth}
+%%%\begin{SCfigure}
+%\centering
+%\includegraphics[width=0.9\textwidth]{allTHz}
+%\caption{VISION spectra for A) benzene, B) paracetamol, C) saccharin, D) carbamazepine, E) CBZ-SAC I, and F) CBZ-SAC II. 
+%\label{fig:tera_all}}
+%%%\end{SCfigure}
+%%\end{wrapfigure}
+%\end{figure}
+
+
+\clearpage
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{adenuc}
+\newpage
+
+
+
+\end{document}
+
